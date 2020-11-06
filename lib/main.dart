@@ -2,8 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'allads.dart';
+import 'carosalImages.dart';
 import 'firstpage.dart';
 import 'homepage.dart';
+import 'maincarosalview.dart';
 import 'oldads.dart';
 
 void main() {
@@ -42,6 +44,10 @@ class MyApp extends StatelessWidget {
         '/allads': (context) => AllAds(),
         //OldAds
         '/oldads': (context) => OldAds(),
+        //carosalImages CarosalImages
+        '/carosalImages': (context) => CarosalImages(),
+        //MainCarosalView
+        '/maincarosalview': (context) => MainCarosalView(),
       },
     );
   }

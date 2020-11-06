@@ -116,7 +116,8 @@ class _ItemViewState extends State<ItemView> {
                         enlargeCenterPage: true,
                         scrollDirection: Axis.horizontal,
                       ));
-                }),
+                }
+                ),
           Text(' -------------- '),
           //Text(title),
           getTitle(),

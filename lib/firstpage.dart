@@ -39,6 +39,21 @@ class _FirstPageState extends State<FirstPage> {
               Navigator.pushNamed(context, "/oldads");
             },
           ),
+          SizedBox(height:25),
+          RaisedButton(
+            child: Text("Add Main Carosal Images"),
+            onPressed: (){
+              Navigator.pushNamed(context, "/carosalImages");
+            },
+          ),
+          //maincarosalview
+          SizedBox(height:25),
+          RaisedButton(
+            child: Text("Main Carosal View"),
+            onPressed: (){
+              Navigator.pushNamed(context, "/maincarosalview");
+            },
+          ),
 
         ],
       ),
