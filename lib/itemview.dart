@@ -23,6 +23,8 @@ String title = '';
 String price = '';
 String phone = '';
 
+String serchText=' ';
+
 //final String number = "123456789";
 //final String email = "dancamdev@example.com";
 String numb;
@@ -164,12 +166,20 @@ class _ItemViewState extends State<ItemView> {
           //
           //  ],
           //),
+          RaisedButton(
+            child: Text("press me"),
+            onPressed: (){
+              
+            },
+          ),
           Text(' --- END --- '),
+          Text(serchText),
           RaisedButton(
             child: Text("DELETE AD"),
             onPressed: (){
               print("Deleted");
               Firestore.instance.collection('ads').document('${widget.docID123}').delete();
+
               Navigator.pop(context);
             },
           ),

@@ -71,9 +71,9 @@ class _HomePageState extends State<HomePage> {
                   count = snapshot.data.documents.length.toString();
                  for (int i = 0; i < snapshot.data.documents.length; i++) {
                   // DocumentSnapshot snap = snapshot.data.documents[i];
-                  bool status = snapshot.data.documents[i].data['reviewstatus'];
+                  //bool status = snapshot.data.documents[i].data['reviewstatus'];
 
-                  if(status==false){
+                  
                     String docID = snapshot.data.documents[i].documentID;
                     String value1 =snapshot.data.documents[i].data['value1'];
                     String value2 = snapshot.data.documents[i].data['value2'];
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                     String carimage =
                         snapshot.data.documents[i].data['urls'][0];                  
                     _listOfObjects.add(CarModel(value1,value2,value3,value4,carimage,docID));
-                  }
+                  
                   
                   
                 }
